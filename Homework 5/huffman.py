@@ -1,3 +1,5 @@
+import copy
+
 def textToFrequency(file):
     """reads a text file and returns a dictionary of each letter's frequency"""
 
@@ -17,6 +19,13 @@ def textToFrequency(file):
     return frequencydict
 
 def encode(freqdict={}):
+    heapfreqdict = copy.deepcopy(freqdict)
+
+
+def _generateNodes(freqdict):
+    """this helpermethods generates a 'tree' of letters/nodes"""
+    while len(freqdict) > 1:
+        
     
 
 
